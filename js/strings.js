@@ -32,12 +32,12 @@ const veiksmas = 'ejo';
 /*const pasaka = berniukas + ' ir ' + mergaite + ' ' +
 veiksmas + ' i ' + vieta + '.';*/
 const pasaka =
- `${berniukas} ir ${mergaite} ${veiksmas} i ${vieta}`;
+  `${berniukas} ir ${mergaite} ${veiksmas} i ${vieta}`;
 
 console.log(pasaka)
 
 const name = 'Rimantas';
 const surname = 'Belovas';
 const birth = 1940;
-const heroSays = `${name} ${surname} says (${2020 -birth})`;
+const heroSays = `${name} ${surname} says (${2020 - birth})`;
 console.log(heroSays);

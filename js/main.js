@@ -49,7 +49,7 @@ const zaislas = 'kamuolis';
 const destytojas = 'Rimantas';
 const kebab = 'Kebabus';
 const sakis = suo + ' megstamas zaislas yra ' + zaislas
- +'. ' + destytojas + ' dievina ' + kebab +' su jautiena.';
+    + '. ' + destytojas + ' dievina ' + kebab + ' su jautiena.';
 console.log(sakis);
 
 const heroName = 'Dalia';
@@ -69,7 +69,7 @@ const vasaris = 470;
 const kovas = 310;
 const islaidos = 150;
 
-pinigine = pinigine + (sausis - islaidos); 
+pinigine = pinigine + (sausis - islaidos);
 console.log(pinigine + '€');
 pinigine = pinigine + (vasaris - islaidos);
 console.log(pinigine + '€');
