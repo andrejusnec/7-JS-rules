@@ -68,6 +68,12 @@ const suma1 = teleloto[0] - teleloto[1] + teleloto[2]
     - teleloto[3] + teleloto[4];
 const Rezultatas1 = `Pirmo skaiciu saraso verte: ${suma1}.`;
 console.log(Rezultatas1);
+/* let suma1 = 0
+   suma1 = suma1 + teleloto[0];
+   suma1 = suma1 + teleloto[1];
+   suma1 = suma1 + teleloto[2];
+   suma1 = suma1 + teleloto[3];
+   suma1 = suma1 + teleloto[4]; */
 const suma2 = pinkodas[0] - pinkodas[1] + pinkodas[2] -
     pinkodas[3] + pinkodas[4];
 const Rezultatas2 = `Antro skaiciu saraso verte: ${suma2}.`;
@@ -96,6 +102,15 @@ console.log(Result3);
 const Total = `${sarasas1}, ${sarasas2}, ${sarasas3}.`;
 console.log(Total);
 
+/* let allWords = '';
+   allWords = allWords + ', ' + cities[4];
+   allWords = allWords + ', ' + cities[3];
+   allWords = allWords + ', ' + cities[2];
+   allWords = allWords + ', ' + cities[1];
+   allWords = allWords + ', ' + cities[0];
+   console.log(allWords) */
+
+  
 
 
 
