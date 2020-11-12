@@ -81,8 +81,14 @@ ir isspaudinti kas gaunasi
 pvz: abcdef -> bdf 
 */
 const wordas = 'Katinelis';
-for(let i = 1; i < wordas.length;i= i+2)
+const step = 4;
+const pirmosraidePozicija = step - 1;
+let blemba = '';
+for(let i = pirmosraidePozicija; i < wordas.length;i = i + step)
 {
-    console.log( wordas[i]);
+    const raide = wordas[i];
+    blemba = blemba + raide
+    /*blemba += wordas[i];*/
 }
+console.log(blemba)
 
