@@ -65,43 +65,31 @@ for (let i = zodis1.length - 1; i >= 0; i--) {
 }
 console.log(`"Lana Del Rey - Summertime Sadness" -> "${atv1}"`);
 console.log('***********************************');
-console.clear();
 console.log('Task Nr3');
 console.log(`Suskaičiuoti, kiek nurodytame intervale yra skaičių,
  kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai`);
- /* KEICIASI INTERVALO SKAICIAI : NUM IR KEICIAI DALIJAMOJO REIKSME*/
-const num31 = 0;
-const num41 = 11;
-let kiekisBE1 = 0;
-for (let i = num31; i <= num41; i++) {
-    if(i % 3 === 0){
-        kiekisBE1++;
-    }
-}
-console.log(`Skaičių intervale tarp ${num31} ir ${num41}, besidalijančių 
-be liekanos iš 3 yra ${kiekisBE1} vienetai`);
-console.log('***********************************');
-let kiekisBE2 = 0;
-for (let i = num31; i <= num41; i++) {
-    if(i % 3 === 0){
-        kiekisBE1++;
-    }
-}
-console.log(`Skaičių intervale tarp ${num31} ir ${num41}, besidalijančių 
-be liekanos iš 3 yra ${kiekisBE1} vienetai`);
-console.log('***********************************');
-/*const num32 = 8;
-const num42 = 31;
-let kiekisBE2 = 0;
-for(let i = num32; i <= num42; i++) {
-    if(i % 5 === 0) {
-        kiekisBE++;
-    }
-}
-console.log(`Skaiciu intervalo : ${num32} - ${num42} : 
-${kiekisBE2} skaiciai dalijasi is 5 be likucio`);
-console.log('***********************************');
-/*
+/* KEICIASI INTERVALO SKAICIAI : NUM IR KEICIAI DALIJAMOJO REIKSME*/
 
+const nuo = [0, 8, -18];
+const iki = [11, 31, 18];
+let kiekisBE = 0;
+const del = [3, 5, 7];
+for (let z = 0; z < nuo.length; z++) {
+    
+    for (let x = 0; x < del.length; x++) {
+       
+        kiekisBE = 0;
+        for (let i = nuo[z]; i <= iki[z]; i++) {
+           
+            if (i % del[x] === 0) {
+                kiekisBE++;
+            }
+        
+        }
+        console.log(`Skaičių intervale tarp ${nuo[z]} ir ${iki[z]}, besidalijančių 
+        be liekanos iš ${del[x]} yra ${kiekisBE} vienetai`);
+    }
 
+}
 
+console.log('***********************************');
