@@ -83,6 +83,6 @@ pvz: abcdef -> bdf
 const wordas = 'Katinelis';
 for(let i = 1; i < wordas.length;i= i+2)
 {
-    console.log( wordas[i]);
+    console.log(wordas[i]);
 }
 
