@@ -69,37 +69,39 @@ console.clear();
 console.log('Task Nr3');
 console.log(`Suskaičiuoti, kiek nurodytame intervale yra skaičių,
  kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai`);
+ /* KEICIASI INTERVALO SKAICIAI : NUM IR KEICIAI DALIJAMOJO REIKSME*/
 const num31 = 0;
 const num41 = 11;
-let skaiciuKiekis = 0;
 let kiekisBE1 = 0;
-let pavargau = 0;
 for (let i = num31; i <= num41; i++) {
-    console.log(i);
-    skaiciuKiekis = i % 3;
-    console.log(skaiciuKiekis);
-    if(skaiciuKiekis === 0){
+    if(i % 3 === 0){
         kiekisBE1++;
     }
 }
-console.log(`Skaiciu intervalo : ${num31} - ${num41} : 
-${kiekisBE1} skaiciai dalijasi is 3 be likucio`);
+console.log(`Skaičių intervale tarp ${num31} ir ${num41}, besidalijančių 
+be liekanos iš 3 yra ${kiekisBE1} vienetai`);
 console.log('***********************************');
-const num32 = 8;
+let kiekisBE2 = 0;
+for (let i = num31; i <= num41; i++) {
+    if(i % 3 === 0){
+        kiekisBE1++;
+    }
+}
+console.log(`Skaičių intervale tarp ${num31} ir ${num41}, besidalijančių 
+be liekanos iš 3 yra ${kiekisBE1} vienetai`);
+console.log('***********************************');
+/*const num32 = 8;
 const num42 = 31;
-let skSuma2 = 0;
 let kiekisBE2 = 0;
 for(let i = num32; i <= num42; i++) {
-    skSuma2 = i % 5
-    if(skSuma2 === 0) {
-        kiekisBE2++
+    if(i % 5 === 0) {
+        kiekisBE++;
     }
-    console.log(kiekisBE2);
-    skSuma2 += i;
 }
 console.log(`Skaiciu intervalo : ${num32} - ${num42} : 
 ${kiekisBE2} skaiciai dalijasi is 5 be likucio`);
 console.log('***********************************');
+/*
 
 
 
