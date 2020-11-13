@@ -13,7 +13,7 @@ console.log('***********************************');
 const skaicius11 = 0;
 const skaicius22 = 4;
 let suma2 = 0;
-for( let i = skaicius11; i <= skaicius22; i++) {
+for (let i = skaicius11; i <= skaicius22; i++) {
     suma2 += i;
 }
 console.log(`Susumavus skaičius intervale nuo
@@ -22,7 +22,7 @@ console.log('***********************************');
 const skaicius13 = 0;
 const skaicius23 = 100;
 let suma3 = 0;
-for(let i = skaicius13; i <= skaicius23; i++) {
+for (let i = skaicius13; i <= skaicius23; i++) {
     suma3 += i
 }
 console.log(`Susumavus skaičius intervale nuo
@@ -31,7 +31,7 @@ console.log('***********************************');
 const skaicius14 = 574;
 const skaicius24 = 815;
 let suma4 = 0;
-for(let i = skaicius14; i <= skaicius24; i++) {
+for (let i = skaicius14; i <= skaicius24; i++) {
     suma4 += i;
 }
 console.log(`Susumavus skaičius intervale nuo
@@ -40,7 +40,7 @@ console.log('***********************************');
 const skaicius15 = -50;
 const skaicius25 = 50;
 let suma5 = 0;
-for(let i = skaicius15; i <= skaicius25; i++) {
+for (let i = skaicius15; i <= skaicius25; i++) {
     suma5 += i;
 }
 console.log(`Susumavus skaičius intervale nuo
@@ -49,7 +49,7 @@ console.log('***********************************');
 const skaicius16 = -70;
 const skaicius26 = 30;
 let suma6 = 0;
-for( let i = skaicius16; i <= skaicius26; i++) {
+for (let i = skaicius16; i <= skaicius26; i++) {
     suma6 += i;
 }
 console.log(`Susumavus skaičius intervale nuo
@@ -60,8 +60,46 @@ console.log(`2.	Panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšm
 a.	pvz.: “abcdef” -> “fedcba” `);
 const zodis1 = 'Lana del Rey - Summertime Sadness';
 let atv1 = '';
-for(let i = zodis1.length - 1; i >= 0; i--) {
+for (let i = zodis1.length - 1; i >= 0; i--) {
     atv1 += zodis1[i];
 }
 console.log(`"Lana Del Rey - Summertime Sadness" -> "${atv1}"`);
+console.log('***********************************');
+console.clear();
+console.log('Task Nr3');
+console.log(`Suskaičiuoti, kiek nurodytame intervale yra skaičių,
+ kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai`);
+const num31 = 0;
+const num41 = 11;
+let skaiciuKiekis = 0;
+let kiekisBE1 = 0;
+let pavargau = 0;
+for (let i = num31; i <= num41; i++) {
+    console.log(i);
+    skaiciuKiekis = i % 3;
+    console.log(skaiciuKiekis);
+    if(skaiciuKiekis === 0){
+        kiekisBE1++;
+    }
+}
+console.log(`Skaiciu intervalo : ${num31} - ${num41} : 
+${kiekisBE1} skaiciai dalijasi is 3 be likucio`);
+console.log('***********************************');
+const num32 = 8;
+const num42 = 31;
+let skSuma2 = 0;
+let kiekisBE2 = 0;
+for(let i = num32; i <= num42; i++) {
+    skSuma2 = i % 5
+    if(skSuma2 === 0) {
+        kiekisBE2++
+    }
+    console.log(kiekisBE2);
+    skSuma2 += i;
+}
+console.log(`Skaiciu intervalo : ${num32} - ${num42} : 
+${kiekisBE2} skaiciai dalijasi is 5 be likucio`);
+console.log('***********************************');
+
+
 
