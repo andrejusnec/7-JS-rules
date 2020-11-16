@@ -134,14 +134,24 @@ else {
 }
 console.log('***************Task Nr5*****************');
 /*Sukurti skaiciu masiva.Palyginti ar jame yra tokiu paciu
-skaiciu
-const numPalig = [1, 50, 20, 100, 20];
-let yra = true;
+skaiciu*/
+const numPalig = [1, 50, 2, 100, 20];
+let yra = false;
 let numBeris = numPalig[0];
 for(let i = 0; i < numPalig.length; i++) {
-    if(numPalig[i !== numPalig[i + 1]])
+    for(let z = i + 1; z < numPalig.length;z++) {
+        if(numPalig[i] === numPalig[z]) {
+            yra = true;
+            break;
+        }
+    }
+    if(yra) {
+        break;
+    }
+}
+console.log(yra);
 
-*/
+
 console.log('***************Task Nr6*****************');
 /*Parasyti programa, kuri nustato mokyniu skaiciu, kuriu ugis virsija
 vidurki*/
@@ -182,26 +192,42 @@ for(let i = 0; i < digits.length; i++) {
 if(z <= 0) {
     console.log(`There is none!`);
 }
+console.log(`******************************************`)
+function MSG(from, text = "No text") {
+    from = '*' + from + '*';
+    alert(from + ': ' + text);
+}
+let from = "Ana";
+MSG(from, );
 
+let t = 1;
+alert (showTemp(t));
 
+function showTemp(v) {
+    let out;
+    if(v > 0) {
+        out = 'Temperature is above zero';
 
+    }
+    else if(v < 0) {
+        out = 'Temperature is below zero';
+    }
+    else {
+        out = 'Temperature is equal to zero';
+    }
+    return out;
+}
+let c = [1, 2, 5];
+function summ(a = 1, b = 1, c =1) {
+    let t = 0;
+    alert(showTemp(t));
+    return a + b + c;
+}
+summ(3, 5, 2);
+console.log( 3 * summ(3, 2));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//6 количество элементов в массиве
-
-
-/* 18 длинна масива - 1 =
- индекс =  переменная [ индекс ] - это значение переменной!!!*/
+function testPrimer() {
+    let bt = 100;
+    console.log(bt);
+}
+testPrimer();
