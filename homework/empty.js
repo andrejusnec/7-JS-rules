@@ -1,6 +1,8 @@
+console.log('**********Task Nr1**********')
 function tusciaFunkcija() {
     return false;
 }
+console.log(tusciaFunkcija());
 /* SKAICIAI:
 - SVEIKIEJI
 - DESIMTAINIAI
@@ -8,9 +10,9 @@ function tusciaFunkcija() {
 - NaN
 - Infinity
 */
-console.log( tusciaFunkcija(5));
 // input VALIDATION
-function multy(a = 5, b = 5) {
+console.log('**********Task Nr2**********')
+function daugyba(a = 5, b = 5) {
     if ( '' + b === 'NaN') {
         console.log('Klaida222!');
         return false;
@@ -41,6 +43,48 @@ function multy(a = 5, b = 5) {
     //function RESULT
     return suma;*/
 }
-console.log(multy());
-console.log(multy(4, 4));
-console.log(multy(NaN, NaN));
+const skaicius1 = 10;
+const skaicius2 = -5;
+const skaicius3 = 77;
+console.log(daugyba(skaicius1, skaicius2));
+console.log(daugyba(skaicius3, skaicius2));
+console.log(daugyba(skaicius1, skaicius3));
+console.log('**********Task Nr3**********')
+
+function skaitmenuKiekisSkaiciuje(n) {
+    let numberLenght = 0;
+    if(typeof n !== 'number' || isNaN(n)) {
+        console.log('Pateikta netinkamo tipo reikšmė.')
+        return false;
+    } 
+    if (n === true){
+        n = false;
+        console.log('Pateikta netinkamo tipo reikšmė.')
+        return false;
+    }
+    if(n < 0){
+        for(let i = 0; n < -1 ; i++) {
+            n = n /10;
+            numberLenght++
+        }
+    }
+    else if(n === 0) {
+        numberLenght = 1;
+    }
+    else{
+    for(let i = 0; n >= 1; i++) {
+        n = n/10;
+    numberLenght++;
+    }
+}
+
+   /*
+    do { n/=10; numberLenght++ } while (n>=1)*/
+        return numberLenght;
+}
+console.log(skaitmenuKiekisSkaiciuje(5));
+console.log(skaitmenuKiekisSkaiciuje(781));
+console.log(skaitmenuKiekisSkaiciuje(37060123456));
+console.log(skaitmenuKiekisSkaiciuje(true));
+console.log(skaitmenuKiekisSkaiciuje("asd"));
+console.log(skaitmenuKiekisSkaiciuje(NaN));
