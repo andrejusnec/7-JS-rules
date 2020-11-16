@@ -54,6 +54,32 @@ for (let i = skaicius16; i <= skaicius26; i++) {
 }
 console.log(`Susumavus skaičius intervale nuo
 ${skaicius16} iki ${skaicius26} gauname: ${suma6}`);
+/*const skaicius16 = 70;
+const skaicius26 = 30;
+let suma6 = 0;
+if(skaicius16 > skaicius26){
+for (let i = skaicius26; i <= skaicius16; i++) {
+    suma6 += i;
+    }
+} else {
+    for (let i = skaicius16; i <= skaicius26; i++) {
+        suma6 += i;
+        }
+}
+console.log(`Susumavus skaičius intervale nuo
+${skaicius16} iki ${skaicius26} gauname: ${suma6}`);*/
+/*
+let nuo10 = [0, 0, 0, 574, -50, -70];
+let iki10 = [0 , 4, 100, 815, 50, 30];
+let Summa
+for(let i = 0; i <= iki10.length; i++ )
+{
+    for (let z = nuo10[i]; z <= iki10[i]; z++) {
+        Summa += z;
+    }
+}
+    console.log(Summa); */
+
 console.log('***********************************');
 console.log('Task Nr2');
 console.log(`2.	Panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo:
@@ -63,7 +89,20 @@ let atv1 = '';
 for (let i = zodis1.length - 1; i >= 0; i--) {
     atv1 += zodis1[i];
 }
-console.log(`"Lana Del Rey - Summertime Sadness" -> "${atv1}"`);
+console.log(`${zodis1} -> "${atv1}"`);
+/*pavyzdis nr2:
+const text = 'abcdef';
+let back = '';
+for (let i = 0; i < text.length; i++) {
+    const letter = text[text.length -i -1];
+    back = back + letter;
+}
+pavyzdis nr3:
+for(let i = 0; i < Text.length; i++) {
+    const letter = text[i];
+    back = letter + back;
+}
+*/
 console.log('***********************************');
 console.log('Task Nr3');
 console.log(`Suskaičiuoti, kiek nurodytame intervale yra skaičių,
@@ -93,3 +132,15 @@ for (let z = 0; z < nuo.length; z++) {
 }
 
 console.log('***********************************');
+
+const nuo1 = 0;
+const iki1 = 11;
+const daliklis = 3;
+
+let kiekis = 0;
+for(a = nuo1; a <= iki1; a++) {
+    if(a % daliklis === 0) {
+        kiekis++
+    }
+}
+console.log(kiekis);
