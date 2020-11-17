@@ -42,13 +42,11 @@ console.log('*******************************************');
 function skaitmenuKiekisSkaiciuje2(num) {
     let numberLenght2 = 0;
     if(typeof num !== 'number' || isNaN(num)) {
-        console.log('Pateikta netinkamo tipo reikšmė.')
-        return false;
+        return 'Pateikta netinkamo tipo reikšmė.';
     } 
-    if (num === true){
+    if (num === true || num === Infinity){
         num = false;
-        console.log('Pateikta netinkamo tipo reikšmė.')
-        return false;
+        return 'Pateikta netinkamo tipo reikšmė.';
     }
     let str = String(num);
     for(let i = 0; i < str.length; i++){
@@ -73,9 +71,9 @@ function isnumber(arg){
     }
     return flag;
 }
-console.log(skaitmenuKiekisSkaiciuje2(5.4578));
+console.log(skaitmenuKiekisSkaiciuje2(1));
 console.log(skaitmenuKiekisSkaiciuje2(781));
 console.log(skaitmenuKiekisSkaiciuje2(37060123456));
 console.log(skaitmenuKiekisSkaiciuje2(true));
-console.log(skaitmenuKiekisSkaiciuje2("asd"));
+console.log(skaitmenuKiekisSkaiciuje2('asd'));
 console.log(skaitmenuKiekisSkaiciuje2(NaN));
